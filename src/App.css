@@ -40,5 +40,13 @@ img {
 }
 
 .scoreboard {
+  width: fit-content;
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  width: 60vw;
 }
