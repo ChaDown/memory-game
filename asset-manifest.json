@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.a68caef8.css",
+    "main.js": "/memory-game/static/js/main.07af7d60.js",
+    "static/js/787.69b12325.chunk.js": "/memory-game/static/js/787.69b12325.chunk.js",
+    "static/media/voldemort.jpg": "/memory-game/static/media/voldemort.3b96c23d55f7c3fbf0d8.jpg",
+    "static/media/bellatrix.jpg": "/memory-game/static/media/bellatrix.8b01e9e3002a275ce7c0.jpg",
+    "static/media/harry.jpg": "/memory-game/static/media/harry.9343dd6c7d0a7c1d4a2e.jpg",
+    "static/media/hermione.jpg": "/memory-game/static/media/hermione.4a8ff4e260e166d51d1c.jpg",
+    "static/media/ginny.jpg": "/memory-game/static/media/ginny.461fa4b10a0b7d07ae74.jpg",
+    "static/media/dumbledore.jpg": "/memory-game/static/media/dumbledore.b711e5422ca68ce6634a.jpg",
+    "static/media/luna.jpg": "/memory-game/static/media/luna.8f7e6710d2d0747a274e.jpg",
+    "static/media/hagrid.jpg": "/memory-game/static/media/hagrid.78650614936a09eb59df.jpg",
+    "static/media/ron.jpg": "/memory-game/static/media/ron.419800bb49c8db8f8ebd.jpg",
+    "static/media/snape.jpg": "/memory-game/static/media/snape.5a3c053fef618b091216.jpg",
+    "static/media/draco.jpg": "/memory-game/static/media/draco.2726416481a1290013e6.jpg",
+    "static/media/malfoy.jpg": "/memory-game/static/media/malfoy.71c6a429df6a3000586e.jpg",
+    "index.html": "/memory-game/index.html",
+    "main.a68caef8.css.map": "/memory-game/static/css/main.a68caef8.css.map",
+    "main.07af7d60.js.map": "/memory-game/static/js/main.07af7d60.js.map",
+    "787.69b12325.chunk.js.map": "/memory-game/static/js/787.69b12325.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a68caef8.css",
+    "static/js/main.07af7d60.js"
+  ]
+}
