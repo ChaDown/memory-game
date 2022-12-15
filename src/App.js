@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Card from './components/card';
+import Header from './components/header';
 import harry from './components/images/harry.jpg';
 import hermione from './components/images/hermione.jpg';
 import bellatrix from './components/images/bellatrix.jpg';
@@ -17,6 +18,7 @@ import './App.css';
 const App = () => {
   const [score, setScore] = useState(0);
   const [highScore, setHighscore] = useState(0);
+  const [clickedArr, setClickedArr] = useState([]);
 
   const cardsArr = [
     { name: 'Harry', image: harry },
@@ -33,11 +35,49 @@ const App = () => {
     { name: 'Hagrid', image: hagrid },
   ];
 
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  function handleClick(e) {
+    const cardName = e.target.id;
+
+    if (clickedArr.includes(cardName)) {
+      setScore(0);
+      setClickedArr([]);
+    } else {
+      setClickedArr([...clickedArr, cardName]);
+      setScore(score + 1);
+    }
+  }
+
+  // Setting highscore with useEffect, as it will render after the game, which is more accurate. This watches score and highScore, and if the condition is met renders.
+
+  useEffect(() => {
+    if (score > highScore) {
+      setHighscore(score);
+    }
+  }, [score, highScore]);
+
   return (
-    <div className='cardsContainer'>
-      {cardsArr.map((char) => (
-        <Card name={char.name} image={char.image} />
-      ))}
+    <div>
+      <div className='gameBody'>
+        <Header score={score} highScore={highScore} />
+        <div className='cardsContainer'>
+          {shuffleArray(cardsArr).map((char) => (
+            <Card
+              key={char.name}
+              name={char.name}
+              image={char.image}
+              handleClick={handleClick}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
